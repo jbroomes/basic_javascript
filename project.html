@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+<body>
+	<p> Display "Good Day!" if the hour is less than 18:00</p>
+
+    <p id="list_stuff"> Good Evening!</p>
+    <p id="demo"> Good Eevening!</p>
+	<script> 
+		if (new Date ().getHours()<18) {
+			document.getElementById("demo").innerHTML = "Good Morning!";
+		}
+	else if(new Date().getHours()> 18 && new Date(). getHours()<18){
+		document.getElementById("demo").innerHTML = "Good Afteroon!";
+	}
+
+
+random_num =[0, 1, 12, 8, 0, 7, 3, 0, 5]
+
+for(var counter=0; counter<random_num.length; counter++){
+	if (random_num[counter]>0)
+		document.getElementById("list_stuff").innerHTML += "space"+random_num[counter] ;
+}
+</script>
+</body>
+</html>
+
